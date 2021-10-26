@@ -25,11 +25,6 @@ const Home = () => {
   const setData = (data) => {
     const { id } = data;
     localStorage.setItem("ID", id);
-    // localStorage.setItem("First Name", name);
-    // localStorage.setItem("Last Name", username);
-    // localStorage.setItem("Mobile", phone);
-    // localStorage.setItem("Email", email);
-    // localStorage.setItem("Department", company);
   };
 
   // Handle delete
@@ -86,12 +81,10 @@ const Home = () => {
             aria-label="Search"
             onChange={(e) => setSearchTerm(e.target.value)}
           />
-
         </form>
       </div>
-      
-      {
-      users
+
+      {users
         .filter((user) => {
           if (searchTerm === "") {
             return "";
@@ -155,7 +148,7 @@ const Home = () => {
               <td>{user.email}</td>
               <td>{user.company.name}</td>
               <td>
-              {/* Delete button */}
+                {/* Delete button */}
                 <button
                   type="button"
                   className="btn btn-danger"
