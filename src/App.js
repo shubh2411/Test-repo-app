@@ -1,25 +1,13 @@
 import "./App.css";
-import Home from "./components/Home";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Orders from "./components/Orders";
-import Reports from "./components/Reports";
-import AddUser from "./components/AddUser";
-import UpdateUser from "./components/UpdateUser";
-import Navbar from "./components/Navbar";
+import Display from "./components/Display";
+import Search from "./components/Search";
 
 function App() {
   return (
     <div className="container">
-      <Router>
-        <Navbar />
-        <Switch>
-          <Route path="/" component={Home} exact />
-          <Route path="/orders" component={Orders} />
-          <Route path="/reports" component={Reports} />
-          <Route path="/add" component={AddUser} />
-          <Route path="/update/:id" component={UpdateUser} />
-        </Switch>
-      </Router>
+      <h1>Welcome User!!</h1>
+      <Search />
+      <Display />
     </div>
   );
 }

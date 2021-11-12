@@ -1,6 +1,11 @@
-.user-heading {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
+.search-bar{
+    position: absolute;
+    right: 10px;
+    top: 10px;
 }
+
+/* .search-result{
+    position: absolute;
+    top: 100px;
+    display: block;
+} */
